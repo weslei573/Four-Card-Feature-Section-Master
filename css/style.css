@@ -4,7 +4,7 @@
 :root {
     /* FONTS */
     --FF: "Poppins", sans-serif;
-    --FS: 0.9375rem;
+    --FS: 1rem;
 
     /* COLORS */
     --Red: hsl(0, 78%, 62%);
