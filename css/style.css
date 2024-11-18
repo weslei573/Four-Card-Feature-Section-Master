@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
 
+/* || VARIABLES */
 :root {
     /* FONTS */
     --FF: "Poppins", sans-serif;
@@ -8,10 +9,135 @@
     /* COLORS */
     --Red: hsl(0, 78%, 62%);
     --Cyan: hsl(180, 62%, 55%);
-    --Orange: hsl(34, 97%, 64%); 
+    --Orange: hsl(34, 97%, 64%);
     --Blue: hsl(212, 86%, 64%);
-    --Very-Dark-Blue: hsl(234, 12%, 34%);
-    --Grayish-Blue: hsl(229, 6%, 66%);
-    --Very-Light-Gray: hsl(0, 0%, 98%);
+    --HIGHLIGHT: hsl(234, 12%, 34%);
+    --FONT-COLOR: hsl(229, 6%, 66%);
+    --ITEM-COLOR: rgb(255, 255, 255);
+    --BGCOLOR: hsl(0, 0%, 98%);
+
+    --BORDERS: 1px solid #333;
 }
 
+/* || GENERAL */
+
+html {
+    font-family: var(--FF);
+    font-size: var(--FS);
+    background-color: var(--BGCOLOR);
+}
+
+body {
+    background-color: var(--BGCOLOR);
+    color: var(--FONT-COLOR);
+    min-height: 100vh;
+    width: 77.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 4em;
+    border-left: var(--BORDERS);
+    border-right: var(--BORDERS);
+}
+
+h1,
+h2,
+span {
+    color: var(--HIGHLIGHT);
+    font-weight: 600;
+}
+
+p {
+    line-height: 1.5;
+}
+
+.center {
+    text-align: center;
+}
+
+/* || HEADER */
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 518px;
+}
+
+.header__span {
+    font-weight: 200;
+    font-size: 2rem;
+}
+
+.header__h1 {
+    margin-bottom: 0.5rem;
+}
+
+/* || MAIN */
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+        'sid mei  rig'
+        'sid mei2 rig'
+    ;
+    gap: 2em;
+}
+
+.item1 {
+    grid-area: sid;
+    place-content: center;
+}
+
+.item2 {
+    grid-area: mei;
+}
+
+.item3 {
+    grid-area: mei2;
+}
+
+.item4 {
+    grid-area: rig;
+    place-content: center;
+}
+
+.main__item {
+    background-color: var(--ITEM-COLOR);
+    max-width: 350px;
+    height: 250px;
+    padding: 25px;
+    border-radius: 6px;
+    position: relative;
+}
+
+.top1 {
+    border-top: 4px solid var(--Cyan);
+}
+
+.top2 {
+    border-top: 4px solid var(--Red);
+}
+
+.top3 {
+    border-top: 4px solid var(--Orange);
+}
+
+.top4 {
+    border-top: 4px solid var(--Blue);
+}
+
+.main__item-h2 {
+    margin-bottom: 1rem;
+}
+
+.icon {
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
+}
