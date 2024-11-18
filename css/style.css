@@ -82,28 +82,17 @@ p {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-template-areas:
-        'sid mei  rig'
-        'sid mei2 rig'
-    ;
     gap: 2em;
 }
 
 .item1 {
-    grid-area: sid;
+    grid-row: 1/3;
     place-content: center;
 }
 
-.item2 {
-    grid-area: mei;
-}
-
-.item3 {
-    grid-area: mei2;
-}
-
 .item4 {
-    grid-area: rig;
+    grid-column: 3/4;
+    grid-row: 1/3;
     place-content: center;
 }
 
