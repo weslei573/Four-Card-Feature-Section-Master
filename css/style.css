@@ -30,7 +30,7 @@ html {
 body {
     background-color: var(--BGCOLOR);
     color: var(--FONT-COLOR);
-    min-height: 100vh;
+    height: 100vh;
     width: 77.5%;
     display: flex;
     flex-direction: column;
