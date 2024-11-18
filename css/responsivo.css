@@ -1,5 +1,10 @@
 @media (max-width: 1200px) {
 
+    body {
+        height: 100%;
+        padding: 4rem 0;
+    }
+
     .main {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -11,5 +16,23 @@
     .item4 {
         grid-column: 1;
         grid-row: 1;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    .header__span,
+    .header__h1 {
+        font-size: 1.6rem;
+    }
+
+    .main__item-h2 {
+        font-size: 1.5rem;
+    }
+
+
+    .main {
+        display: flex;
+        flex-direction: column;
     }
 }
