@@ -11,7 +11,7 @@
     --Cyan: hsl(180, 62%, 55%);
     --Orange: hsl(34, 97%, 64%);
     --Blue: rgb(84, 158, 242);
-    --HIGHLIGHT: hsl(234, 12%, 34%);
+    --HIGHLIGHT: rgb(76, 78, 97);
     --FONT-COLOR: hsl(229, 6%, 66%);
     --ITEM-COLOR: rgb(255, 255, 255);
     --BGCOLOR: hsl(0, 0%, 98%);
@@ -100,7 +100,7 @@ p {
     padding: 25px;
     border-radius: 6px;
     position: relative;
-    box-shadow: rgba(84, 158, 242, 0.25) 0px 13px 27px -5px, rgba(84, 158, 242, 0.3) 0px 8px 16px -8px;
+    box-shadow: rgba(76, 78, 97, 0.25) 0px 13px 27px -5px, rgba(76, 78, 97, 0.3) 0px 8px 16px -8px;
 }
 
 .top1 {
