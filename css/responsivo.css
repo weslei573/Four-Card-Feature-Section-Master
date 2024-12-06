@@ -1,4 +1,4 @@
-@media (max-width: 1200px) {
+@media (max-width: 1240px) {
 
     body {
         height: 100%;
@@ -7,6 +7,7 @@
 
     .main {
         grid-template-columns: repeat(2, 1fr);
+        transition: 1s ease-out;
     }
 
     .item1 {
@@ -19,7 +20,7 @@
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 827px) {
 
     .header__span,
     .header__h1 {
